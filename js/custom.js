@@ -48,11 +48,13 @@ calculateTotal.addEventListener("click", function () {
 
     // Added Total coast
     const totalCoast = playerExpenses + managerCoast + coachCoast;
-    total.innerText = totalCoast;
+    
 
-    If(managerCoast.value == ‘’ || coachCoast.value ==‘’){
-        total.innerText =‘’;
-        Return total;
+    if(totalCoast >0 ){
+        total.innerText = totalCoast;
+    }
+    else{
+        alert('please input your valid number')
     }
 
 });
