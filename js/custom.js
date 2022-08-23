@@ -39,8 +39,6 @@ calculate.addEventListener("click", function () {
     // added Player Expense
     playerExpense.innerText = totalExpense;
 
-    // const theChildren = playerList.children;
-    // console.log(theChildren.length);
 });
 
 calculateTotal.addEventListener("click", function () {
@@ -51,6 +49,12 @@ calculateTotal.addEventListener("click", function () {
     // Added Total coast
     const totalCoast = playerExpenses + managerCoast + coachCoast;
     total.innerText = totalCoast;
+
+    If(managerCoast.value == ‘’ || coachCoast.value ==‘’){
+        total.innerText =‘’;
+        Return total;
+    }
+
 });
 
 function getInput(element) {
